@@ -23,6 +23,3 @@ What I Did
 
 Sample Alert Output
 
-```bash
-[**] [1:2001219:9] ET POLICY Outbound SSH Connection Established [**]
-[Classification: Potential Corporate Privacy Violation] [Priority: 1]

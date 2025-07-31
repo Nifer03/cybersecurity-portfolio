@@ -1,6 +1,7 @@
 Suricata IDS/IPS Lab
 
 Overview
+
 This lab explores the installation, configuration, and testing of **Suricata**, an open-source IDS/IPS engine used for network traffic inspection. It demonstrates how to detect potential threats by analyzing packets in real time.
 
 Suricata is widely used in both enterprise and cloud environments for its performance and open architecture. This project helps build practical skills in network visibility and basic intrusion detection.

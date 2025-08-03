@@ -77,3 +77,21 @@ You should see Configuration provided was successfully loaded.
 Now let's run Suricata by starting its service:
 sudo systemctl start suricata.service
 sudo systemctl status suricata.service
+
+Let's check is our Suricata is working
+cd /var/log/suricata
+ls
+cat fast.log
+curl http://testmynids.org/uid/index.html
+
+This should generate an alert. Let's check:
+cat fast.log
+
+You should get something like this:[Classification: Potentially Bad Traffic]
+
+Now let's check our eve.json file:
+cat eve.json
+
+You can see more details here compared to fast.log. 
+
+Now our Suricata is up and running.

@@ -27,7 +27,8 @@ Find the section:
 vars:
   address-groups:
     HOME_NET: "[192.168.0.0/16]"
-Your HOME_NET is your VM's internal IP address range
+Your HOME_NET is your VM's internal IP address range. To find your HOME_NET run 
+ip a
 
- Edit the Config File
-sudo nano /etc/suricata/suricata.yaml
+Restart Suricata
+sudo systemctl restart suricata

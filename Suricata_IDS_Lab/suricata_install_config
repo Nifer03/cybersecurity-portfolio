@@ -30,5 +30,19 @@ vars:
 Your HOME_NET is your VM's internal IP address range. To find your HOME_NET run 
 ip a
 
-Restart Suricata
-sudo systemctl restart suricata
+Set your interface
+Ctrl + W
+
+Then type:
+interface
+
+Edit and update it according to the interface you want to monitor.
+
+Rules
+sudo suricata-update list-sources
+
+To add our source:
+sudo suricata-update enable-source et/open
+
+Let's update the Suricata in our instance:
+sudo suricata-update

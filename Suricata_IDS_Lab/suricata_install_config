@@ -51,3 +51,21 @@ Let's confirm our rules:
 cd /var/lib/suricata
 ls
 ls -la
+
+Let's update our root passwd first:
+sudo passwd root
+
+To become a root user, type:
+su root
+
+Type:
+cd rules
+ls -la
+
+You should see two files classification.config and suricata.rules
+Type:
+cat suricata.rules
+
+What you see now is the rules that Suricata will reference as it analyze network traffic. To quit
+CTRL Q 
+

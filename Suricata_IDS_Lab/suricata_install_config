@@ -46,3 +46,8 @@ sudo suricata-update enable-source et/open
 
 Let's update the Suricata in our instance to include the rule that we just added:
 sudo suricata-update
+
+Let's confirm our rules:
+cd /var/lib/suricata
+ls
+ls -la

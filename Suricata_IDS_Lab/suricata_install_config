@@ -117,4 +117,22 @@ sudo tail -f /var/log/suricata/fast.log
 You should now see:
 SSH connection attempt detected.
 
-Create a rule to detect DNS activity:
+Add a DNS Detection Rule to our local rule:
+
+sudo nano /var/lib/suricata/rules/local.rules
+
+Add this rule to the bottom:
+alert udp any any -> any 53 (msg:"Generic DNS Query Detected"; content:"example"; nocase; sid:1000005; rev:1;)
+
+Test the Rule & Restart Suricata
+sudo suricata -T -c /etc/suricata/suricata.yaml -v
+sudo systemctl restart suricata
+
+Generate DNS Traffic
+dig example.com
+
+Check log:
+sudo tail -f /var/log/suricata/fast.log
+
+You should see:
+Generic DNS Query Detected

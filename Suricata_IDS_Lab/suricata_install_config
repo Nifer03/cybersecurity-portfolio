@@ -66,19 +66,19 @@ You should see two files classification.config and suricata.rules
 Type:
 cat suricata.rules
 
-What you see now is the rules that Suricata will reference as it analyze network traffic. To quit
+What you see now are the rules that Suricata will reference as it analyze network traffic. To quit
 CTRL Q 
 
 Let's start testing our Suricata
 sudo suricata -T -c /etc/suricata/suricata.yaml -v
 
-You should see Configuration provided was successfully loaded.
+You should see "Configuration provided was successfully loaded."
 
 Now let's run Suricata by starting its service:
 sudo systemctl start suricata.service
 sudo systemctl status suricata.service
 
-Let's check is our Suricata is working
+Let's check if our Suricata is working
 cd /var/log/suricata
 ls
 cat fast.log

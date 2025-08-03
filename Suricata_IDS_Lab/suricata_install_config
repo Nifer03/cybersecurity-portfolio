@@ -1,6 +1,6 @@
 Suricata Installation & Configuration (Kali Linux)
 
-A beginner-friendly Suricata Intrusion Detection System (IDS) setup for home lab practice and demonstration.
+Here's a beginner-friendly Suricata Intrusion Detection System (IDS) setup for home lab practice and demonstration.
 
 Environment:
 Virtualization: Hyper-V

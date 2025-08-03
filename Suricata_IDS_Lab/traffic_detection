@@ -1,7 +1,5 @@
 Here's a basic IDS setup for detecting SSH, DNS, ICMP, and HTTP traffic on Kali Linux
 
-Let's create custom rules for SSH, DNS and HTTP.
-
 Create a custom rule to detect any SSH attempt
 sudo nano /var/lib/suricata/rules/local.rules
 

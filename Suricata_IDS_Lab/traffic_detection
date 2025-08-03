@@ -1,4 +1,4 @@
-Here's a basic IDS setup for detecting ICMP, SSH, DNS, and HTTP traffic on Kali Linux
+Here's a basic IDS setup for detecting SSH, DNS, ICMP, and HTTP traffic on Kali Linux
 
 Let's create custom rules for SSH, DNS and HTTP.
 
@@ -15,11 +15,11 @@ sudo systemctl restart suricata
 Run SSH test
 ssh 1.1.1.1
 
-Check logs
+Check log:
 sudo tail -f /var/log/suricata/fast.log
 
-You should now see:
-SSH connection attempt detected.
+You should see:
+[**] [1:1000003:1] SSH connection attempt detected [**]
 
 Add a DNS Detection Rule to our local rule:
 
@@ -28,7 +28,7 @@ sudo nano /var/lib/suricata/rules/local.rules
 Add this rule to the bottom:
 alert udp any any -> any 53 (msg:"Generic DNS Query Detected"; content:"example"; nocase; sid:1000005; rev:1;)
 
-Test the Rule & Restart Suricata
+Test config & restart Suricata
 sudo suricata -T -c /etc/suricata/suricata.yaml -v
 sudo systemctl restart suricata
 
@@ -39,4 +39,42 @@ Check log:
 sudo tail -f /var/log/suricata/fast.log
 
 You should see:
-Generic DNS Query Detected
+[**] [1:1000005:1] Generic DNS Query Detected [**]
+
+Add a Custom HTTP Rule:
+sudo nano /var/lib/suricata/rules/local.rules
+
+Add this rule to the bottom:
+alert http any any -> any any (msg:"Custom HTTP GET Request Detected"; content:"GET"; http_method; sid:1000006; rev:2;)
+
+Test config & restart Suricata
+sudo suricata -T -c /etc/suricata/suricata.yaml -v
+sudo systemctl restart suricata
+
+Test:
+curl http://example.com
+
+Check log:
+sudo tail -f /var/log/suricata/fast.log
+
+You should see:
+[**] [1:1000006:2] Custom HTTP GET Request Detected [**]
+
+Generate simple ICMP traffic:
+sudo nano /etc/suricata/rules/local.rules
+
+Add this rule to the bottom:
+alert icmp any any -> any any (msg:"ICMP test detected"; sid:1000001; rev:1;)
+
+Test config & restart Suricata
+sudo suricata -T -c /etc/suricata/suricata.yaml -v
+sudo systemctl restart suricata
+
+Test:
+ping -c 4 google.com
+
+Check log:
+sudo tail -f /var/log/suricata/fast.log
+
+You should see:
+[**] [1:1000001:1] ICMP test detected [**]

@@ -69,3 +69,7 @@ cat suricata.rules
 What you see now is the rules that Suricata will reference as it analyze network traffic. To quit
 CTRL Q 
 
+Let's start testing our Suricata
+sudo suricata -T -c /etc/suricata/suricata.yaml -v
+
+You should see Configuration provided was successfully loaded.

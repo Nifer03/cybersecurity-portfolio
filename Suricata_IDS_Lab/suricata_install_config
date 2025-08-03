@@ -95,3 +95,26 @@ cat eve.json
 You can see more details here compared to fast.log. 
 
 Now our Suricata is up and running.
+
+Let's create custom rules for SSH, DNS and HTTP.
+
+Create a custom rule to detect any SSH attempt
+sudo nano /var/lib/suricata/rules/local.rules
+
+Add this rule:
+alert tcp any any -> any 22 (msg:"SSH connection attempt detected"; sid:1000003; rev:1;)
+
+Test config & restart Suricata
+sudo suricata -T -c /etc/suricata/suricata.yaml -v
+sudo systemctl restart suricata
+
+Run SSH test
+ssh 1.1.1.1
+
+Check logs
+sudo tail -f /var/log/suricata/fast.log
+
+You should now see:
+SSH connection attempt detected.
+
+Create a rule to detect DNS activity:

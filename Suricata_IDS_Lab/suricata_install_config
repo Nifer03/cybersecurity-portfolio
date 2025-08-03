@@ -1,1 +1,33 @@
+Suricata Installation & Configuration (Kali Linux)
 
+A beginner-friendly Suricata Intrusion Detection System (IDS) setup for home lab practice and demonstration.
+
+Environment:
+Virtualization: Hyper-V
+OS: Kali GNU/Linux 2025.2
+Suricata Version: [to be filled after install]
+
+Step 1: Update Kali packages
+sudo apt update && sudo apt upgrade -y
+
+Step 2: Install Suricata
+sudo apt install suricata -y
+
+Step 3: Check version
+suricata --build-info | grep version
+
+Step 4: Check if it’s running
+sudo systemctl status suricata
+
+Basic Configuration
+Set HOME_NET in Suricata YAML config
+sudo nano /etc/suricata/suricata.yaml
+
+Find the section:
+vars:
+  address-groups:
+    HOME_NET: "[192.168.0.0/16]"
+Your HOME_NET is your VM's internal IP address range
+
+ Edit the Config File
+sudo nano /etc/suricata/suricata.yaml

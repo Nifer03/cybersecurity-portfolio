@@ -8,12 +8,9 @@ System Details
 - Suricata Version: Kali GNU/Linux 2025.2
 
 What I Did [to edit]
-- Installed Suricata on a local Linux VM
-- Configured rules to detect HTTP, SSH, and suspicious DNS traffic
+- Installed and Configured Suricata on a local Linux VM
+- Configured custom rules to detect ICMP, HTTP, SSH, and suspicious DNS traffic
 - Integrated a basic GUI (Scirius CE) for better alert visualization
 - Used sample `.pcap` files to simulate attacks (e.g., port scans, brute force)
 - Captured logs and alerts in `/var/log/suricata/`
-
-Sample Alert Output
-- To include
 

@@ -5,8 +5,7 @@ This lab explores the installation, configuration, and testing of **Suricata**, 
 System Details
 - Virtualization: Hyper-V
 - OS:Kali GNU/Linux 2025.2
-- Suricata Version: [to be filled after install]
-- Interface: [to be filled after install]
+- Suricata Version: Kali GNU/Linux 2025.2
 
 What I Did [to edit]
 - Installed Suricata on a local Linux VM

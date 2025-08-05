@@ -10,6 +10,6 @@ System Details
 What I Did
 - Installed and Configured Suricata on a local Linux VM
 - Configured custom rules to detect ICMP, HTTP, SSH, and suspicious DNS traffic
-- Integrated a basic GUI (Scirius CE) for better alert visualization
-- Used sample `.pcap` files to simulate attacks (e.g., port scans, brute force)
-- Captured logs and alerts in `/var/log/suricata/`
+- Integrated a basic GUI (Scirius CE) for better alert visualization (to include)
+- Used sample `.pcap` files to simulate attacks (e.g., port scans, brute force) (to include)
+- Captured logs and alerts in `/var/log/suricata/` (to include)

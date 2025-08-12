@@ -17,30 +17,37 @@ After a successful 13-year career in sales, I am passionately transitioning into
 ### Technical Skills
 
 - **Operating Systems:** Linux (Ubuntu, Kali), Windows 10/11
-- **Security Tools:** Wireshark, Suricata, Splunk, Shuffle
+- **Security Tools:** Wireshark, Suricata, Splunk, Shuffle, Bitdefender
 - **Virtualization:** Hyper-V, VirtualBox
 - **Platforms:** Active Directory, G-Suite, Slack, HubSpot
 - **Concepts:** Network Security, Vulnerability Management, Incident Response, Threat Analysis, Security Awareness
 
 ### Projects
 
-#### 1. [Project Title]
-* **Objective:** [Briefly describe the goal of the project]
-* **Tools Used:** [List the tools]
-* **Key Takeaways:** [Explain what you learned]
-* **Link:** [Link to the project repository]
+#### 1. Active Directory Detection & Response Lab
+* **Objective:** Implement an automated incident response workflow by integrating Splunk SIEM, Shuffle SOAR, and Active Directory to detect suspicious logins, send Slack/email alerts, and optionally disable accounts upon analyst review.
+* **Tools Used:** Splunk, Shuffle SOAR, Active Directory, Slack, Vultr
+* **Key Takeaways:**
+• Resolved real-world networking issues (firewall, network profile, and port blocking) to restore critical service access.
+• Integrated Splunk SIEM with Shuffle SOAR via webhooks for automated detection and Slack alerting.
+• Configured Active Directory with least-privilege accounts to enable secure automated account disablement.
+• Tuned SPL queries, alert schedules, and event triggers to ensure reliable detection.
+• Successfully navigated application and integration roadblocks through iterative testing and configuration refinement.
+* **Link:** https://github.com/Nifer03/active-directory-detection-response-lab
 
-#### 2. [Project Title]
-* **Objective:** [Briefly describe the goal of the project]
-* **Tools Used:** [List the tools]
-* **Key Takeaways:** [Explain what you learned]
-* **Link:** [Link to the project repository]
+#### 2. Suricata Intrusion Detection/Prevention System Lab
+* **Objective:** Build and test Suricata IDS rules to detect ICMP, SSH, DNS, and HTTP traffic, enhancing practical network threat detection skills.
+* **Tools Used:** Kali GNU/Linux 2025.2, Hyper-V, Suricata Version: 7.0.10
+* **Key Takeaways:**
+• Developed and tested custom Suricata IDS rules for multiple protocols.
+• Enhanced detection accuracy through iterative tuning and packet analysis.
+• Applied hands-on threat detection in a controlled lab environment.
+* **Link:** https://github.com/Nifer03/cybersecurity-portfolio/tree/main/Suricata_IDS_Lab
 
 ---
 
 ### Let's Connect!
 
-- **LinkedIn:** [Your LinkedIn URL]
-- **Email:** [Your Email Address]
+- **LinkedIn:** www.linkedin.com/in/jennifer-villamor-819bbb180
 
 Thanks for visiting my GitHub!

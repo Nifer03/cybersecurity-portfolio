@@ -26,7 +26,7 @@ Suricata Version: 7.0.10
 
 ## 🧰 Installation & Configuration
 
-Full installation steps and configuration details are documented [here](suricata_install_config.md).
+Full installation steps and configuration details are documented [here](suricata_install_config.md#suricata-installation--configuration)
 
 
 ## 💻Traffic Detection Rules

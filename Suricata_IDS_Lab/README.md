@@ -1,25 +1,45 @@
 **Suricata IDS/IPS Lab**
 
-This lab explores the installation, configuration, and testing of **Suricata**, an open-source IDS/IPS engine used for network traffic inspection. It demonstrates how to detect potential threats by analyzing packets in real time.
+## 🎯Overview
+This lab explores the installation, configuration, and testing of Suricata, an open-source IDS/IPS engine for real-time network traffic inspection. It demonstrates how to detect potential threats using custom detection rules.
 
-**System Details**
-- Virtualization: Hyper-V
- 
-- OS:Kali GNU/Linux 2025.2
-  
-- Suricata Version: 7.0.10
+## 📌Lab Sections
 
-**What I Did**
-- Installed and Configured Suricata on a local Linux VM
-  
-- Configured custom rules to detect ICMP, HTTP, SSH, and suspicious DNS traffic
+Overview
+
+System Details
+
+Installation & Configuration
+
+Traffic Detection Rules
+
+Planned Enhancements
 
 
-**Planned Additions:**
+## 🔌System Details
 
--Integrate a basic GUI (Scirius CE) for better alert visualization
+Virtualization: Hyper-V
 
--Use sample .pcap files to simulate attacks (e.g., port scans, brute force)
+OS: Kali GNU/Linux 2025.2
 
--Capture logs and alerts in /var/log/suricata/
+Suricata Version: 7.0.10
 
+## 🧰 Installation & Configuration
+
+Full installation steps and configuration details are documented [here](suricata_install_config.md).
+
+
+## 💻Traffic Detection Rules
+
+All custom rules and testing commands are documented [here](traffic_detection.md).
+
+
+## 🔭Planned Enhancements
+
+These are the next steps I plan to implement to extend the lab:
+
+Integrate a basic GUI (Scirius CE) for improved alert visualization.
+
+Use sample .pcap files to simulate attacks such as port scans and brute force attempts.
+
+Capture and analyze logs in /var/log/suricata/ for deeper insights.

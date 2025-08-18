@@ -6,7 +6,7 @@
 
 ### About Me
 
-After a successful 13-year career in sales, I am passionately transitioning into the field of cybersecurity. My background in understanding client needs, communicating complex solutions, and building strategic relationships gives me a unique perspective on managing and mitigating digital risks. I've successfully translated my problem-solving and strategic thinking skills into a deep passion for threat intelligence, incident response, and network security. I am committed to continuous learning and am actively building my technical skills through hands-on labs and personal projects.
+After a successful 13-year career in sales, I am passionately transitioning into the field of cybersecurity. My background in understanding client needs, communicating complex solutions, and building strategic relationships gives me a unique perspective on managing and mitigating digital risks. I've successfully translated my problem-solving and strategic thinking skills into a deep passion for incident response, and network security. I am committed to continuous learning and am actively building my technical skills through hands-on labs and personal projects.
 
 ---
 

@@ -28,7 +28,7 @@ After a successful 13-year career in sales, I am passionately transitioning into
 * **Objective:** Implement an automated incident response workflow by integrating Splunk SIEM, Shuffle SOAR, and Active Directory to detect suspicious logins, send Slack/email alerts, and optionally disable accounts upon analyst review.
 * **Tools Used:** Splunk, Shuffle SOAR, Active Directory, Slack, Vultr
 * **Key Takeaways:**
-• Adjusted Vultr firewall rules and network profiles to resolve connectivity issues..
+• Adjusted cloud firewall rules and network profiles to resolve connectivity issues..
 • Integrated Splunk SIEM with Shuffle SOAR for automated detection and Slack alerting.
 • Configured Active Directory with test accounts, explore permissions and access control and enable secure automated account disablement.
 • Tuned SPL queries, alert schedules, and event triggers to ensure reliable detection.
